@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+    <namespace>testromberg.qt.help</namespace>
+    <virtualFolder>helpdocs</virtualFolder>
+    <filterSection>
+        <toc>
+            <section title="1. General Information" ref="1infoGenEN.html"></section>
+			<section title="2. Installation" ref="2instalacionEN.html"></section>
+			<section title="3. Settings" ref="3ConfiguracionEN.html"></section>
+			<section title="4. Patient's data" ref="4PacienteEN.html"></section>
+			<section title="5. Data display" ref="5visualizacionEN.html">
+				<section title="5.1 Signals" ref="5visualizacionEN.html#senales"></section>
+				<section title="5.2 Areas" ref="5visualizacionEN.html#areas"></section>
+				<section title="5.3 Parameters" ref="5visualizacionEN.html#parametros"></section>
+			</section>
+			<section title="6. Report of the results" ref="6reporteEN.html">
+				<section title="6.1 Report generation" ref="6reporteEN.html#generacion"></section>
+				<section title="6.2 Report edition" ref="6reporteEN.html#edicion"></section>
+			</section>
+			<section title="7. Credits" ref="7CreditosEN.html"></section>
+        </toc>
+        <keywords>
+            <keyword name="Installation" ref="2instalacionEN.html"/>
+            <keyword name="Settings" ref="3ConfiguracionEN.html"/>
+			<keyword name="Patients" ref="4PacienteEN.html"/>
+			<keyword name="Display" ref="5visualizacionEN.html"/>
+			<keyword name="Lateral signal" ref="5visualizacionEN.html#senales"/>
+			<keyword name="Antero-posterior signal" ref="5visualizacionEN.html#senales"/>
+			<keyword name="Ellipse area" ref="5visualizacionEN.html#areas"/>
+			<keyword name="Convex hull area" ref="5visualizacionEN.html#areas"/>
+			<keyword name="Oriented ellipse area" ref="5visualizacionEN.html#areas"/>
+			<keyword name="Parameters" ref="5visualizacionEN.html#parametros"/>
+			<keyword name="Generate report" ref="6reporteES.html#generacion"/>
+			<keyword name="Edit report" ref="6reporteES.html#edicion"/>
+        </keywords>
+        <files>
+            <file>1infoGenEN.html</file>
+            <file>2instalacionEN.html</file>
+            <file>3ConfiguracionEN.html</file>
+			<file>4PacienteEN.html</file>
+			<file>5visualizacionEN.html</file>
+			<file>6reporteEN.html</file>
+			<file>7CreditosEN.html</file>
+			<file>images/3Configuracion(EN).png</file>
+			<file>images/4Pacientes(EN).png</file>
+			<file>images/4_1NuevoEstudio(EN).png</file>
+			<file>images/4_2Visualizacion(EN).png</file>
+			<file>images/4_3Senales(EN).png</file>
+			<file>images/4_4Areas(EN).png</file>
+			<file>images/6Edicion(EN).png</file>
+			<file>images/image001.png</file>
+			<file>images/image005.png</file>
+			<file>images/image006.png</file>
+			<file>images/image007.png</file>
+			<file>images/image008.png</file>
+			<file>images/image009.png</file>
+			<file>images/image010.png</file>
+			<file>images/image011.png</file>
+			<file>images/image014.png</file>
+			<file>images/image015.png</file>
+			<file>images/image016.png</file>
+			<file>images/image017.png</file>
+        </files>
+    </filterSection>
+</QtHelpProject>

@@ -1,0 +1,136 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Manual de Usuario</title>
+	</head>
+	<body style="font-size:12pt;font-family:helvetica">
+		<h2><a name="visualizacion">5. DATA DISPLAY</a></h2>
+			<p>
+				To visualize the results, the buttons <b>New Study</b> and <b>Multiple Analysis</b> are used. A new window will open (see <a href="#figura3">Figure 3</a>), where the data to be ANALYZED is chosen. In the left list, there are the patient's folders or data text files, which are in the <i>data folder</i> defined in <i>settings</i>.
+			</p>
+			<center>
+				<p><a name="figura3"><img style="width:80%;max-width:667px;height:auto" src="images/4_1NuevoEstudio(EN).png" /></a></p>
+				<p>Figura 3. New Study.</p>
+			</center>
+			<p>
+				The data files are selected and added to the right list, with the button &#9654;. The files on the right list will be those that will be analyzed in the new study. To remove files from the right list, they are selected and the button &#9664; is pressed. With the button <b>New Study</b>, when multiple files are selected, the data is processed so the average of the selected signals is shown, while with the button <b>Multiple Analysis</b>, each file is processed individually.
+			</p>
+			<p>
+				Finally, it is necessary to give a name to the study. When completed, the button <b>Add Study</b> will be enabled, and when pressed, the results of the study will be presented in the main window (see <a href="#figura4">Figure 4</a>).
+			</p>
+			<center>
+				<p><a name="figura4"><img style="width:80%;max-width:1282px;height:auto" src="images/4_2Visualizacion(EN).png" /></a></p>
+				<p>Figura 4. Visualization of the results.</p>
+			</center>
+			<h3><a name="senales">5.1 Signals</a></h3>
+				<p>
+					Lateral and antero-posterior oscillation signals are presented from the selected data. In these windows, all the studies that the user generates are presented.
+				</p>
+				<center>
+					<p><a name="figura5"><img style="width:80%;max-width:774px;height:auto" src="images/4_3Senales(EN).png" /></a></p>
+					<p>Figura 5. Presentation of lateral and antero-posterior oscillation signals.</p>
+				</center>
+			<h3><a name="areas">5.2 Areas</a></h3>
+				<p>
+					The location of the selected data is presented and the areas of the regions that contain the data are defined. The regions are defined by three methods:
+				</p>
+				<ol>
+					<li>Ellipse: The ellipse containing the data, with horizontal and vertical axes, is calculated from the maximum and minimum values.</li>
+					<li>Convex hull: The convex hull with minimum area is calculated to contain all the data.</li>
+					<li>Oriented ellipse: The ellipse is calculated with axes oriented to contain most of the data.</li>
+				</ol>
+				<center>
+					<p><a name="figura6"><img style="width:80%;max-width:775px;height:auto" src="images/4_4Areas(EN).png" /></a></p>
+					<p>Figura 6. Presentación de áreas de oscilación.</p>
+				</center>
+			<h3><a name="parametros">5.3 Parameters</a></h3>
+				<p>
+					From research in scientific literature, the parameters of stabilometry that are analyzed in the study are defined:
+				</p>
+				<table border="1" style="width:100%">
+					<tr>
+						<th>Parameter</th>
+						<th>Description</th>
+						<th>Calculation</th>
+					</tr>
+					<tr>
+						<td>Oscillation range</td>
+						<td>It is the difference between the maximum and minimum values of lateral or antero-posterior oscillation.</td>
+						<td>
+							<p><center><img style="width:125px;height:auto" src="images/image014.png" /></center></p>
+							<p><i>V<sub>MAX</sub></i>: Maximum value</p>
+							<p><i>V<sub>MIN</sub></i>: Minimum value</p>
+						</td>
+					</tr>
+					<tr>
+						<td>Mean velocity (MV<sub>ML,AP</sub>)</td>
+						<td>The mean velocity is the sum of the velocities at each moment of time, the barycenter.</td>
+						<td>
+							<p><center><img style="width:125px;height:auto" src="images/image001.png" /></center></p>
+							<p><i>x<sub>i</sub></i>: Magnitude in an instant <i>i</i>.</p>
+							<p><i>t<sub>i</sub></i>: Time instant.</p>
+							<p><i>n</i>: Number of points.</p>
+						</td>
+					</tr>
+					<tr>
+						<td>Total mean velocity (MV)</td>
+						<td>The total mean velocity is the displacement of the barycenter, both in <i>x</i> and in <i>y</i>, in the total analysis time.</td>
+						<td>
+							<p><center><img style="width:271px;height:auto" src="images/image005.png" /></center></p>
+							<p><i>AP</i> and <i>ML</i>: Signals of antero-posterior and lateral oscillation, respectively.</p>
+							<p><i>N</i>: Total number of points of the signal.</p>
+							<p><i>T</i>: Total analysis time.</p>
+						</td>
+					</tr>
+					<tr>
+						<td>Signal RMS</td>
+						<td>The average distance between the barycenter and each point of the signal.</td>
+						<td>
+							<p><center><img src="images/image011.png" /></center></p>
+							<p><i>S<sub>i</sub></i>: Point of the signal.</p>
+							<p><i>S&#772</i>: Average of the signal.</p>
+							<p><i>N</i>: Number of data in the signal.</p>
+						</td>
+					</tr>
+					<tr>
+						<td>RMS distance (D<sub>RMS</sub>)</td>
+						<td>Represents the standard distribution of the data.</td>
+						<td><p><center><img src="images/image017.png" /></center></p></td>
+					</tr>
+					<tr>
+						<td>Mean distance (MD)</td>
+						<td>It is the average distance of the COP path.</td>
+						<td><p><center><img src="images/image015.png" /></center></p></td>
+					</tr>
+					<tr>
+						<td>Mean frequency (MF)</td>
+						<td>Is the number of revolutions per second, in an uniform circular motion with radius MD, and its path is the total path of the COP.</td>
+						<td><p><center><img src="images/image016.png" /></center></p></td>
+					</tr>
+					<tr>
+						<td>Area of balance by limits (A)</td>
+						<td>The radii of the ellipse are calculated from the maximums and minimums of the signals.</td>
+						<td>
+							<p><center><img src="images/image006.png" /></center></p>
+							<p><center><img src="images/image007.png" /></center></p>
+							<p><center><img src="images/image008.png" /></center></p>
+						</td>
+					</tr>
+					<tr>
+						<td>Area of balance by convex hull</td>
+						<td>The area of the minimum polygon that encloses all points.</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Area of balance by principal components analysis (PCA)</td>
+						<td>The eigenvectors of the points of the signal are calculated. The first eigenvector defines the radii of the ellipse and its angle of rotation.</td>
+						<td>
+							<p><center><img src="images/image009.png" /></center></p>
+							<p><center><img src="images/image010.png" /></center></p>
+							<p><center><img src="images/image008.png" /></center></p>
+						</td>
+					</tr>
+				</table>
+				<p><center>Table 1. Stability parameters.</center></p>
+    </body>
+</html>

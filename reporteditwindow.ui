@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReportEditWindow</class>
+ <widget class="QDialog" name="ReportEditWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>510</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>510</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>510</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Edición del Reporte</string>
+  </property>
+  <property name="toolTip">
+   <string notr="true"/>
+  </property>
+  <widget class="QToolButton" name="btnAceptar">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>670</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string notr="true"/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton {border: 0px solid; 	border-radius: 12;	background-color: rgb(240,240,240)} QToolButton:hover {border: 0px solid; 	border-radius: 12;	background-color: rgb(178,178,178)}</string>
+   </property>
+   <property name="text">
+    <string>Aceptar Cambios</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextOnly</enum>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btnCancelar">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>670</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string notr="true"/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton {border: 0px solid; 	border-radius: 12;	background-color: rgb(240,240,240)} QToolButton:hover {border: 0px solid; 	border-radius: 12;	background-color: rgb(178,178,178)}</string>
+   </property>
+   <property name="text">
+    <string>Cancelar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextOnly</enum>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QFrame" name="framePage">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>510</width>
+     <height>660</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 191);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="frameMargin">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>35</y>
+      <width>439</width>
+      <height>589</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLineEdit" name="lineEditTitulo">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>439</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Cambria</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(23, 54, 93);</string>
+     </property>
+     <property name="text">
+      <string notr="true"/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="editSub1_1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>80</y>
+       <width>439</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Cambria</family>
+       <pointsize>8</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 140, 0);</string>
+     </property>
+     <property name="text">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QPlainTextEdit" name="editIntro">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>439</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="documentTitle">
+      <string notr="true"/>
+     </property>
+     <property name="lineWrapMode">
+      <enum>QPlainTextEdit::WidgetWidth</enum>
+     </property>
+     <property name="plainText">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="editSub1_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>240</y>
+       <width>439</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Cambria</family>
+       <pointsize>8</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 140, 0);</string>
+     </property>
+     <property name="text">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QPlainTextEdit" name="editParagraph1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>260</y>
+       <width>439</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="documentTitle">
+      <string notr="true"/>
+     </property>
+     <property name="lineWrapMode">
+      <enum>QPlainTextEdit::WidgetWidth</enum>
+     </property>
+     <property name="plainText">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="editSub1_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>310</y>
+       <width>439</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Cambria</family>
+       <pointsize>8</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 140, 0);</string>
+     </property>
+     <property name="text">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="editSub2_1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>330</y>
+       <width>439</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Cambria</family>
+       <pointsize>7</pointsize>
+       <weight>75</weight>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(23, 54, 93);</string>
+     </property>
+     <property name="text">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="editSub2_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>350</y>
+       <width>439</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Cambria</family>
+       <pointsize>7</pointsize>
+       <weight>75</weight>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(23, 54, 93);</string>
+     </property>
+     <property name="text">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="editSub2_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>370</y>
+       <width>439</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Cambria</family>
+       <pointsize>7</pointsize>
+       <weight>75</weight>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(23, 54, 93);</string>
+     </property>
+     <property name="text">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="editSub1_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>390</y>
+       <width>439</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Cambria</family>
+       <pointsize>8</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 140, 0);</string>
+     </property>
+     <property name="text">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblDatosPaciente">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>100</y>
+       <width>439</width>
+       <height>135</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>APELLIDOS:
+NOMBRES:
+IDENTIFICACIÓN:;
+FECHA DE NACIMIENTO:
+GÉNERO:
+PESO:
+ALTURA:
+ÍNDICE DE MASA CORPORAL:
+FECHA DE SESIÓN:
+OCUPACIÓN:
+PROYECTO:
+EVALUADO POR:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblParameters">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>410</y>
+       <width>439</width>
+       <height>135</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Rango de Oscilación Lateral (mm)
+Rango de Oscilación Antero-Posterior (mm)
+Velocidad Media Oscilación Lateral (mm/s)
+Velocidad Media Oscilación Antero-Posterior (mm/s)
+Velocidad Media Oscilación del Centro de Presión (mm/s)
+Oscilación Lateral RMS (mm)
+Oscilación Antero-Posterior RMS (mm)
+Distancia Media (mm)
+Frecuencia Media (Hz)
+Área de la Elipse (mm²)
+Área del Polígono Envolvente (mm²)
+Área de la Elipse Orientada (mm²)</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="lblMargin">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Zona de márgenes</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

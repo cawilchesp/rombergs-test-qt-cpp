@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/imagenes">
+        <file>Imagenes/Escudo_UMB.png</file>
+        <file>Imagenes/aboutQt.png</file>
+        <file>Imagenes/DownTriangle.png</file>
+        <file>Imagenes/UpTriangle.png</file>
+    </qresource>
+    <qresource prefix="/traducciones">
+        <file>ingles.qm</file>
+    </qresource>
+</RCC>

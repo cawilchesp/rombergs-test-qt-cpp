@@ -1,0 +1,137 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Manual de Usuario</title>
+	</head>
+	<body style="font-size:12pt;font-family:helvetica">
+		<h2><a name="visualizacion">5. VISUALIZACIÓN DE LOS DATOS</a></h2>
+			<p>
+				Para visualizar los resultados, se utilizan los botones <b>Nuevo Estudio</b> y <b>Análisis Múltiple</b>. Se abrirá una nueva ventana (ver <a href="#figura3">Figura 3</a>), donde se escogen los datos que se quieren ANALIZAR. En la lista izquierda, se encuentran las carpetas de los pacientes o los archivos de texto de los datos, que se encuentran en la <i>carpeta de datos</i> definida en <i>configuración</i>.
+			</p>
+			<center>
+				<p><a name="figura3"><img style="width:80%;max-width:667px;height:auto" src="images/4_1NuevoEstudio(ES).png" /></a></p>
+				<p>Figura 3. Nuevo estudio.</p>
+			</center>
+			<p>
+				Se seleccionan los archivos de datos y se agregan a la lista derecha, con el botón &#9654;. Los archivos de la lista derecha serán los que se analizarán en el nuevo estudio. Para remover archivos de la lista derecha, se seleccionan y se presiona el botón &#9664;. Con el botón <b>Nuevo Estudio</b>, al tomar varios archivos, se realiza un procesamiento de los datos, de tal manera que la señal presentada será el promedio de las señales seleccionadas, mientras que el botón <b>Análisis Múltiple</b>, cada archivo se procesa de forma individual.
+			</p>
+			<p>
+				Por último, es necesario dar un nombre al estudio. Al completarse, se habilitará el botón <b>Agregar Estudio</b>, y al presionarse, se presentarán los resultados del estudio en la ventana principal (ver <a href="#figura4">Figura 4</a>). 
+			</p>
+			<center>
+				<p><a name="figura4"><img style="width:80%;max-width:1282px;height:auto" src="images/4_2Visualizacion(ES).png" /></a></p>
+				<p>Figura 4. Visualización de los resultados.</p>
+			</center>
+			
+			<h3><a name="senales">5.1 Señales</a></h3>
+				<p>
+					Se presentan las señales de oscilación lateral y antero-posterior a partir de los datos seleccionados. En estás ventanas se presentan todos los estudios que el usuario genere. 
+				</p>
+				<center>
+					<p><a name="figura5"><img style="width:80%;max-width:774px;height:auto" src="images/4_3Senales(ES).png" /></a></p>
+					<p>Figura 5. Presentación de señales de oscilación lateral y antero-posterior.</p>
+				</center>
+			<h3><a name="areas">5.2 Áreas</a></h3>
+				<p>
+					Se presenta la ubicación de los datos seleccionados y se definen las áreas de las regiones que contienen a los datos. Las regiones se definen por tres métodos:
+				</p>
+				<ol>
+					<li>Elipse: Se calcula la elipse que contenga los datos, con ejes horizontal y vertical, a partir de los valores máximos y mínimos.</li>
+					<li>Envolvente convexa: Se calcula la envolvente convexa con área mínima para contener todos los datos.</li>
+					<li>Elipse orientada: Se calcula la elipse con ejes orientados para contener la mayoría de los datos.</li>
+				</ol>
+				<center>
+					<p><a name="figura6"><img style="width:80%;max-width:775px;height:auto" src="images/4_4Areas(ES).png" /></a></p>
+					<p>Figura 6. Presentación de áreas de oscilación.</p>
+				</center>
+			<h3><a name="parametros">5.3 Parámetros</a></h3>
+				<p>
+					De la investigación en literatura científica, se definen los parámetros de estabilometría que se analizan en el estudio:
+				</p>
+				<table border="1" style="width:100%">
+					<tr>
+						<th>Parámetro</th>
+						<th>Descripción</th>
+						<th>Cálculo</th>
+					</tr>
+					<tr>
+						<td>Rango de oscilación</td>
+						<td>Es la diferencia entre los valores máximo y mínimo de oscilación lateral o antero-posterior.</td>
+						<td>
+							<p><center><img style="width:125px;height:auto" src="images/image014.png" /></center></p>
+							<p><i>V<sub>MAX</sub></i>: Valor máximo</p>
+							<p><i>V<sub>MIN</sub></i>: Valor mínimo</p>
+						</td>
+					</tr>
+					<tr>
+						<td>Velocidad media (MV<sub>ML,AP</sub>)</td>
+						<td>La velocidad media es la suma de las velocidades en cada instante de tiempo, del baricentro.</td>
+						<td>
+							<p><center><img style="width:125px;height:auto" src="images/image001.png" /></center></p>
+							<p><i>x<sub>i</sub></i>: Magnitud en el instante <i>i</i>.</p>
+							<p><i>t<sub>i</sub></i>: Instante de tiempo.</p>
+							<p><i>n</i>: Número de puntos.</p>
+						</td>
+					</tr>
+					<tr>
+						<td>Velocidad media total (MV)</td>
+						<td>La velocidad media total es el desplazamiento del baricentro, tanto en <i>x</i> como en <i>y</i>, en el tiempo total de análisis.</td>
+						<td>
+							<p><center><img style="width:271px;height:auto" src="images/image005.png" /></center></p>
+							<p><i>AP</i> y <i>ML</i>: Señales de oscilación antero-posterior y lateral, respectivamente.</p>
+							<p><i>N</i>: Número total de puntos de la señal.</p>
+							<p><i>T</i>: Tiempo total de análisis.</p>
+						</td>
+					</tr>
+					<tr>
+						<td>RMS de la señal</td>
+						<td>La distancia media entre el baricentro y cada punto de la señal.</td>
+						<td>
+							<p><center><img src="images/image011.png" /></center></p>
+							<p><i>S<sub>i</sub></i>: Punto de la señal.</p>
+							<p><i>S&#772</i>: Promedio de la señal.</p>
+							<p><i>N</i>: Número de datos de la señal.</p>
+						</td>
+					</tr>
+					<tr>
+						<td>Distancia RMS (D<sub>RMS</sub>)</td>
+						<td>Representa la distribución estándar de los datos.</td>
+						<td><p><center><img src="images/image017.png" /></center></p></td>
+					</tr>
+					<tr>
+						<td>Distancia media (MD)</td>
+						<td>Es la distancia media de la trayectoria del COP.</td>
+						<td><p><center><img src="images/image015.png" /></center></p></td>
+					</tr>
+					<tr>
+						<td>Frecuencia media (MF)</td>
+						<td>Es el número de revoluciones por segundo, en un movimiento circular uniforme con radio MD, y su recorrido es la trayectoria total del COP.</td>
+						<td><p><center><img src="images/image016.png" /></center></p></td>
+					</tr>
+					<tr>
+						<td>Área del balanceo por límites (A)</td>
+						<td>Los radios de la elipse se calculan a partir de los máximos y mínimos de las señales.</td>
+						<td>
+							<p><center><img src="images/image006.png" /></center></p>
+							<p><center><img src="images/image007.png" /></center></p>
+							<p><center><img src="images/image008.png" /></center></p>
+						</td>
+					</tr>
+					<tr>
+						<td>Área del balanceo por polígono envolvente (convex hull)</td>
+						<td>El área del mínimo polígono que encierra todos los puntos.</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Área del balanceo por análisis por componentes principales (PCA)</td>
+						<td>Se calculan los vectores propios de los puntos de la señal. El primer vector propio define los radios de la elipse y su ángulo de rotación.</td>
+						<td>
+							<p><center><img src="images/image009.png" /></center></p>
+							<p><center><img src="images/image010.png" /></center></p>
+							<p><center><img src="images/image008.png" /></center></p>
+						</td>
+					</tr>
+				</table>
+				<p><center>Tabla 1. Parámetros de estabilidad.</center></p>
+    </body>
+</html>

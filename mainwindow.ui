@@ -1,0 +1,3394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Test de Romberg</string>
+  </property>
+  <property name="toolTip">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QDoubleSpinBox" name="spinAltura">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>405</y>
+      <width>60</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>60</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>60</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QDoubleSpinBox {border: 0px solid; border-radius: 12; background-color: white; padding: 0 0 0 12} QDoubleSpinBox::up-button {border-color: white} QDoubleSpinBox::down-button {border-color: white} QDoubleSpinBox::up-arrow {image: url(:/imagenes/Imagenes/UpTriangle.png)} QDoubleSpinBox::down-arrow {image: url(:/imagenes/Imagenes/DownTriangle.png)} QDoubleSpinBox:!Enabled {background-color: rgb(178,178,178)}</string>
+    </property>
+    <property name="maximum">
+     <double>7.000000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>0.050000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUser12">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>605</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>EVALUADO POR</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUser5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>345</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>GÉNERO</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUser11">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>550</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>PROYECTO</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbxAltura">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>405</y>
+      <width>60</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>60</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>60</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {border: 0px solid; 	border-radius: 12;	background-color: white; padding: 0 12 0 12} QComboBox::drop-down { border-color: rgb(255, 255, 255);} QComboBox::down-arrow {image: url(:/imagenes/Imagenes/DownTriangle.png);} QComboBox:!Enabled {background-color: rgb(178,178,178)}</string>
+    </property>
+    <property name="currentText">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="maxVisibleItems">
+     <number>2</number>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Int</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>US</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="editId">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>255</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {border: 0px solid; border-radius: 12; background-color: white; padding: 0 12 0 12} QLineEdit:!Enabled {background-color: rgb(178,178,178)}</string>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="maxLength">
+     <number>10</number>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="spinPeso">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>375</y>
+      <width>60</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>60</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>60</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QDoubleSpinBox {border: 0px solid; border-radius: 12; background-color: white; padding: 0 0 0 12} QDoubleSpinBox::up-button {border-color: white} QDoubleSpinBox::down-button {border-color: white} QDoubleSpinBox::up-arrow {image: url(:/imagenes/Imagenes/UpTriangle.png)} QDoubleSpinBox::down-arrow {image: url(:/imagenes/Imagenes/DownTriangle.png)} QDoubleSpinBox:!Enabled {background-color: rgb(178,178,178)}</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="specialValueText">
+     <string notr="true"/>
+    </property>
+    <property name="maximum">
+     <double>999.990000000000009</double>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="editOcupacion">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>520</y>
+      <width>200</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>200</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>200</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {border: 0px solid; border-radius: 12; background-color: white; padding: 0 12 0 12} QLineEdit:!Enabled {background-color: rgb(178,178,178)}</string>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="dateNacimiento">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>315</y>
+      <width>90</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>90</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>90</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QDateEdit {border: 0px solid; border-radius: 12; background-color: white; padding: 0 0 0 12} QDateEdit::up-button {border-color: white} QDateEdit::down-button {border-color: white} QDateEdit::up-arrow {image: url(:/imagenes/Imagenes/UpTriangle.png)} QDateEdit::down-arrow {image: url(:/imagenes/Imagenes/DownTriangle.png)} QDateEdit:!Enabled {background-color: rgb(178,178,178)}</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="specialValueText">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUser10">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>495</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>OCUPACIÓN</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbxGenero">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>345</y>
+      <width>100</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {border: 0px solid; 	border-radius: 12;	background-color: white; padding: 0 12 0 12} QComboBox::drop-down { border-color: rgb(255, 255, 255);} QComboBox::down-arrow {image: url(:/imagenes/Imagenes/DownTriangle.png);} QComboBox:!Enabled {background-color: rgb(178,178,178)}</string>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="maxVisibleItems">
+     <number>2</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>FEMENINO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MASCULINO</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="cmbxId">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>255</y>
+      <width>60</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>60</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>60</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {border: 0px solid; 	border-radius: 12;	background-color: white; padding: 0 12 0 12} QComboBox::drop-down { border-color: rgb(255, 255, 255);} QComboBox::down-arrow {image: url(:/imagenes/Imagenes/DownTriangle.png);} QComboBox:!Enabled {background-color: rgb(178,178,178)}</string>
+    </property>
+    <property name="currentText">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>CC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TI</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="lblUser4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>285</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>FECHA DE NACIMIENTO</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="editEvaluador">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>630</y>
+      <width>200</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>200</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>200</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {border: 0px solid; border-radius: 12; background-color: white; padding: 0 12 0 12} QLineEdit:!Enabled {background-color: rgb(178,178,178)}</string>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="editProyecto">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>575</y>
+      <width>200</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>200</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>200</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {border: 0px solid; border-radius: 12; background-color: white; padding: 0 12 0 12} QLineEdit:!Enabled {background-color: rgb(178,178,178)}</string>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUser9">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>465</y>
+      <width>90</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>90</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>90</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>FECHA DE SESIÓN</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="editNombres">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>200</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>200</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>200</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {border: 0px solid; border-radius: 12; background-color: white; padding: 0 12 0 12} QLineEdit:!Enabled {background-color: rgb(178,178,178)}</string>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbxPeso">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>375</y>
+      <width>60</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>60</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>60</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {border: 0px solid; 	border-radius: 12;	background-color: white; padding: 0 12 0 12} QComboBox::drop-down { border-color: rgb(255, 255, 255);} QComboBox::down-arrow {image: url(:/imagenes/Imagenes/DownTriangle.png);} QComboBox:!Enabled {background-color: rgb(178,178,178)}</string>
+    </property>
+    <property name="currentText">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="maxVisibleItems">
+     <number>2</number>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Int</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>US</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="lblUser8">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>435</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>IMC</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUser3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>IDENTIFICACIÓN</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUser2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>175</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>NOMBRES</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUser6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>375</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>PESO</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="dateSesion">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>465</y>
+      <width>90</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>90</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>90</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QDateEdit {border: 0px solid; border-radius: 12; background-color: white; padding: 0 0 0 12} QDateEdit::up-button {border-color: white} QDateEdit::down-button {border-color: white} QDateEdit::up-arrow {image: url(:/imagenes/Imagenes/UpTriangle.png)} QDateEdit::down-arrow {image: url(:/imagenes/Imagenes/DownTriangle.png)} QDateEdit:!Enabled {background-color: rgb(178,178,178)}</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="specialValueText">
+     <string notr="true"/>
+    </property>
+    <property name="dateTime">
+     <datetime>
+      <hour>0</hour>
+      <minute>0</minute>
+      <second>0</second>
+      <year>2000</year>
+      <month>1</month>
+      <day>1</day>
+     </datetime>
+    </property>
+    <property name="date">
+     <date>
+      <year>2000</year>
+      <month>1</month>
+      <day>1</day>
+     </date>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblBMI">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>435</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>80</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>80</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUser7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>405</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>ALTURA</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUser1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>APELLIDOS</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="editApellidos">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>145</y>
+      <width>200</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>200</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>200</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {border: 0px solid; border-radius: 12; background-color: white; padding: 0 12 0 12} QLineEdit:!Enabled {background-color: rgb(178,178,178)}</string>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCustomPlot" name="plotAnteroPosterior" native="true">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>270</y>
+      <width>770</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QCustomPlot" name="plotLateral" native="true">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>125</y>
+      <width>770</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QCustomPlot" name="plotElipse" native="true">
+    <property name="geometry">
+     <rect>
+      <x>263</x>
+      <y>415</y>
+      <width>210</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblElipseTItle">
+    <property name="geometry">
+     <rect>
+      <x>265</x>
+      <y>650</y>
+      <width>210</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Elipse</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblConvexTitle">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>650</y>
+      <width>210</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Polígono Envolvente</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QCustomPlot" name="plotConvex" native="true">
+    <property name="geometry">
+     <rect>
+      <x>506</x>
+      <y>415</y>
+      <width>210</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblPCATitle">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>650</y>
+      <width>210</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Elipse Orientada</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QCustomPlot" name="plotPca" native="true">
+    <property name="geometry">
+     <rect>
+      <x>749</x>
+      <y>415</y>
+      <width>210</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1280</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>90</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>90</height>
+     </size>
+    </property>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>645</x>
+       <y>10</y>
+       <width>20</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>20</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>20</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btnGenerarReporte">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>885</x>
+       <y>40</y>
+       <width>100</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Generar reporte de los resultados</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton {border: 0px solid; 	border-radius: 12;	background-color: rgb(240,240,240)} QToolButton:hover {border: 0px solid; 	border-radius: 12;	background-color: rgb(178,178,178)}</string>
+     </property>
+     <property name="text">
+      <string>Generar Reporte</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextOnly</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btnAnalisis">
+     <property name="geometry">
+      <rect>
+       <x>985</x>
+       <y>10</y>
+       <width>100</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Análisis multiple de datos</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton {border: 0px solid; 	border-radius: 12;	background-color: rgb(240,240,240)} QToolButton:hover {border: 0px solid; 	border-radius: 12;	background-color: rgb(178,178,178)}</string>
+     </property>
+     <property name="text">
+      <string>Análisis Múltiple</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextOnly</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="estudioMenuLabel">
+     <property name="geometry">
+      <rect>
+       <x>885</x>
+       <y>70</y>
+       <width>200</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Estudio</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="pacienteMenuLabel">
+     <property name="geometry">
+      <rect>
+       <x>665</x>
+       <y>70</y>
+       <width>200</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Paciente</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btnNuevoEstudio">
+     <property name="geometry">
+      <rect>
+       <x>885</x>
+       <y>10</y>
+       <width>100</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Agregar un nuevo estudio del paciente</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton {border: 0px solid; 	border-radius: 12;	background-color: rgb(240,240,240)} QToolButton:hover {border: 0px solid; 	border-radius: 12;	background-color: rgb(178,178,178)}</string>
+     </property>
+     <property name="text">
+      <string>Nuevo Estudio</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextOnly</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="Line" name="line_5">
+     <property name="geometry">
+      <rect>
+       <x>1085</x>
+       <y>10</y>
+       <width>20</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>20</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>20</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ayudaMenuLabel">
+     <property name="geometry">
+      <rect>
+       <x>1105</x>
+       <y>70</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Ayuda</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="manualButton">
+     <property name="geometry">
+      <rect>
+       <x>1105</x>
+       <y>10</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>25</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>25</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>Manual de Usuario</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton {border: 0px solid; 	border-radius: 12;	background-color: rgb(240,240,240)} QToolButton:hover {border: 0px solid; 	border-radius: 12;	background-color: rgb(178,178,178)}</string>
+     </property>
+     <property name="text">
+      <string notr="true">?</string>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="languageComboBox">
+     <property name="geometry">
+      <rect>
+       <x>565</x>
+       <y>40</y>
+       <width>80</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>80</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>80</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Idioma de la aplicación</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox {border: 0px solid; 	border-radius: 12;	background-color: white; padding: 0 12 0 12} QComboBox::drop-down { border-color: rgb(255, 255, 255);} QComboBox::down-arrow {image: url(:/imagenes/Imagenes/DownTriangle.png);}</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="maxVisibleItems">
+      <number>2</number>
+     </property>
+     <property name="maxCount">
+      <number>2</number>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+     </property>
+     <property name="frame">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>Español</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Inglés</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QToolButton" name="aboutButton">
+     <property name="geometry">
+      <rect>
+       <x>1135</x>
+       <y>10</y>
+       <width>70</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>70</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>70</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Acerca de...</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton {border: 0px solid; 	border-radius: 12;	background-color: rgb(240,240,240)} QToolButton:hover {border: 0px solid; 	border-radius: 12;	background-color: rgb(178,178,178)}</string>
+     </property>
+     <property name="text">
+      <string>Acerca de...</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextOnly</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="aboutQtButton">
+     <property name="geometry">
+      <rect>
+       <x>1105</x>
+       <y>40</y>
+       <width>100</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Acerca de Qt</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton {border: 0px solid; 	border-radius: 12;	background-color: rgb(240,240,240)} QToolButton:hover {border: 0px solid; 	border-radius: 12;	background-color: rgb(178,178,178)}</string>
+     </property>
+     <property name="text">
+      <string>Acerca de Qt</string>
+     </property>
+     <property name="icon">
+      <iconset resource="recursos.qrc">
+       <normaloff>:/imagenes/Imagenes/aboutQt.png</normaloff>:/imagenes/Imagenes/aboutQt.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextBesideIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="settingsMenuLabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>635</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>635</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>635</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Configuración</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="Line" name="line_6">
+     <property name="geometry">
+      <rect>
+       <x>1205</x>
+       <y>10</y>
+       <width>20</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>20</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>20</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="languageLabel">
+     <property name="geometry">
+      <rect>
+       <x>515</x>
+       <y>40</y>
+       <width>50</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>50</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Idioma</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="temaLabel">
+     <property name="geometry">
+      <rect>
+       <x>515</x>
+       <y>10</y>
+       <width>50</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>50</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Tema</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="temaComboBox">
+     <property name="geometry">
+      <rect>
+       <x>565</x>
+       <y>10</y>
+       <width>80</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>80</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>80</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Tema de la aplicación</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox {border: 0px solid; 	border-radius: 12;	background-color: white; padding: 0 12 0 12} QComboBox::drop-down { border-color: rgb(255, 255, 255);} QComboBox::down-arrow {image: url(:/imagenes/Imagenes/DownTriangle.png);}</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="maxVisibleItems">
+      <number>2</number>
+     </property>
+     <property name="maxCount">
+      <number>2</number>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+     </property>
+     <property name="frame">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>Claro</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Oscuro</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QToolButton" name="btnCargar">
+     <property name="geometry">
+      <rect>
+       <x>765</x>
+       <y>10</y>
+       <width>100</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Cargar datos del paciente</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton {border: 0px solid; 	border-radius: 12;	background-color: rgb(240,240,240)} QToolButton:hover {border: 0px solid; 	border-radius: 12;	background-color: rgb(178,178,178)}</string>
+     </property>
+     <property name="text">
+      <string>Cargar Datos</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextOnly</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btnNuevo">
+     <property name="geometry">
+      <rect>
+       <x>665</x>
+       <y>10</y>
+       <width>100</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Nuevos datos del paciente</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton {border: 0px solid; 	border-radius: 12;	background-color: rgb(240,240,240)} QToolButton:hover {border: 0px solid; 	border-radius: 12;	background-color: rgb(178,178,178)}</string>
+     </property>
+     <property name="text">
+      <string>Nuevo Paciente</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextOnly</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btnGuardar">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>715</x>
+       <y>40</y>
+       <width>100</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Guardar datos del paciente</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton {border: 0px solid; 	border-radius: 12;	background-color: rgb(240,240,240)} QToolButton:hover {border: 0px solid; 	border-radius: 12;	background-color: rgb(178,178,178)}</string>
+     </property>
+     <property name="text">
+      <string>Guardar Datos</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextOnly</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="Line" name="line_7">
+     <property name="geometry">
+      <rect>
+       <x>865</x>
+       <y>10</y>
+       <width>20</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>20</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>20</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btnResultsFolderPath">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>40</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>25</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>25</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton {border: 0px solid; 	border-radius: 12;	background-color: rgb(240,240,240)} QToolButton:hover {border: 0px solid; 	border-radius: 12;	background-color: rgb(178,178,178)}</string>
+     </property>
+     <property name="text">
+      <string notr="true"/>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+     <property name="arrowType">
+      <enum>Qt::RightArrow</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblDatosFolderPath">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>10</y>
+       <width>410</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>410</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>410</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel { border-radius:12px; background-color: white; padding: 0 15 0 15 }</string>
+     </property>
+     <property name="text">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblResultsFolderPath">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>40</y>
+       <width>410</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>410</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>410</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel { border-radius:12px; background-color: white; padding: 0 15 0 15 }</string>
+     </property>
+     <property name="text">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblDatosFolder">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>60</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>60</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>60</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Datos</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btnDatosFolderPath">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>10</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>25</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>25</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton {border: 0px solid; 	border-radius: 12;	background-color: rgb(240,240,240)} QToolButton:hover {border: 0px solid; 	border-radius: 12;	background-color: rgb(178,178,178)}</string>
+     </property>
+     <property name="text">
+      <string notr="true"/>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+     <property name="arrowType">
+      <enum>Qt::RightArrow</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblResultsFolder">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>60</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>60</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>60</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Resultados</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btnEditarReporte">
+     <property name="geometry">
+      <rect>
+       <x>985</x>
+       <y>40</y>
+       <width>100</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Permite rediseñar el  reporte</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton {border: 0px solid; 	border-radius: 12;	background-color: rgb(240,240,240)} QToolButton:hover {border: 0px solid; 	border-radius: 12;	background-color: rgb(178,178,178)}</string>
+     </property>
+     <property name="text">
+      <string>Editar Reporte</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextOnly</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Line" name="line_8">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>125</y>
+      <width>20</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>20</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_9">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>125</y>
+      <width>20</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>20</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="parametrosTitle">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>155</y>
+      <width>245</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>245</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>245</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Parámetros</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUnitsParam">
+    <property name="geometry">
+     <rect>
+      <x>1235</x>
+      <y>190</y>
+      <width>30</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string notr="true">mm</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUnitsParam_2">
+    <property name="geometry">
+     <rect>
+      <x>1235</x>
+      <y>225</y>
+      <width>30</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string notr="true">mm</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUnitsParam_3">
+    <property name="geometry">
+     <rect>
+      <x>1235</x>
+      <y>260</y>
+      <width>30</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string notr="true">mm/s</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUnitsParam_4">
+    <property name="geometry">
+     <rect>
+      <x>1235</x>
+      <y>295</y>
+      <width>30</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string notr="true">mm/s</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUnitsParam_5">
+    <property name="geometry">
+     <rect>
+      <x>1235</x>
+      <y>330</y>
+      <width>30</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string notr="true">mm/s</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUnitsParam_6">
+    <property name="geometry">
+     <rect>
+      <x>1235</x>
+      <y>365</y>
+      <width>30</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string notr="true">mm</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUnitsParam_7">
+    <property name="geometry">
+     <rect>
+      <x>1235</x>
+      <y>400</y>
+      <width>30</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string notr="true">mm</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUnitsParam_8">
+    <property name="geometry">
+     <rect>
+      <x>1235</x>
+      <y>435</y>
+      <width>30</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string notr="true">mm</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUnitsParam_9">
+    <property name="geometry">
+     <rect>
+      <x>1235</x>
+      <y>470</y>
+      <width>30</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string notr="true">Hz</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUnitsParam_10">
+    <property name="geometry">
+     <rect>
+      <x>1235</x>
+      <y>505</y>
+      <width>30</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string notr="true">mm²</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUnitsParam_11">
+    <property name="geometry">
+     <rect>
+      <x>1235</x>
+      <y>540</y>
+      <width>30</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string notr="true">mm²</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUnitsParam_12">
+    <property name="geometry">
+     <rect>
+      <x>1235</x>
+      <y>575</y>
+      <width>30</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string notr="true">mm²</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblValueParam1">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>190</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbxParametros">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>495</x>
+      <y>95</y>
+      <width>240</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>240</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>240</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {border: 0px solid; 	border-radius: 12;	background-color: white; padding: 0 12 0 12} QComboBox::drop-down { border-color: rgb(255, 255, 255);} QComboBox::down-arrow {image: url(:/imagenes/Imagenes/DownTriangle.png);} QComboBox:!Enabled {background-color: rgb(178,178,178)}</string>
+    </property>
+    <property name="currentText">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblValueParam2">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>225</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblValueParam3">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>260</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblValueParam4">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>295</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblValueParam5">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>330</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblValueParam6">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>365</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblValueParam8">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>435</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblValueParam7">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>400</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblValueParam9">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>470</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblValueParam10">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>505</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblValueParam12">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>575</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblValueParam11">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>540</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>50</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblParam1">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>190</y>
+      <width>160</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Rango Oscilación Lateral</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblParam2">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>225</y>
+      <width>160</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Rango Oscilación
+Antero-Posterior</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblParam3">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>260</y>
+      <width>160</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Velocidad Media
+Oscilación Lateral</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblParam4">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>295</y>
+      <width>160</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Velocidad Media
+Oscilación Antero-Posterior</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblParam5">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>330</y>
+      <width>160</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>160</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Velocidad Media
+Oscilación del Centro de Presión</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblParam6">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>365</y>
+      <width>160</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Oscilación Lateral RMS</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblParam7">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>400</y>
+      <width>160</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Oscilación Antero-Posterior RMS</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblParam8">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>435</y>
+      <width>160</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Distancia Media</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblParam9">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>470</y>
+      <width>160</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Frecuencia Media</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblParam10">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>505</y>
+      <width>160</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Área de la Elipse</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblParam11">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>540</y>
+      <width>160</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Área del Polígono Envolvente</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblParam12">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>575</y>
+      <width>160</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>160</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Área de la Elipse Orientada</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pacienteTitle">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>95</y>
+      <width>100</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Paciente</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="recursos.qrc"/>
+ </resources>
+ <connections/>
+</ui>

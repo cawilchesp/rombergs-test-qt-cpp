@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+    <namespace>testromberg.qt.help</namespace>
+    <virtualFolder>helpdocs</virtualFolder>
+    <filterSection>
+        <toc>
+            <section title="1. Información General" ref="1infoGenES.html"></section>
+			<section title="2. Instalación" ref="2instalacionES.html"></section>
+			<section title="3. Configuración" ref="3ConfiguracionES.html"></section>
+			<section title="4. Datos del paciente" ref="4PacienteES.html"></section>
+			<section title="5. Visualización de los datos" ref="5visualizacionES.html">
+				<section title="5.1 Señales" ref="5visualizacionES.html#senales"></section>
+				<section title="5.2 Áreas" ref="5visualizacionES.html#areas"></section>
+				<section title="5.3 Parámetros" ref="5visualizacionES.html#parametros"></section>
+			</section>
+			<section title="6. Reporte de los resultados" ref="6reporteES.html">
+				<section title="6.1 Generación del reporte" ref="6reporteES.html#generacion"></section>
+				<section title="6.2 Edición del reporte" ref="6reporteES.html#edicion"></section>
+			</section>
+			<section title="7. Créditos" ref="7CreditosES.html"></section>
+        </toc>
+        <keywords>
+            <keyword name="Instalación" ref="2instalacionES.html"/>
+            <keyword name="Configuración" ref="3ConfiguracionES.html"/>
+			<keyword name="Pacientes" ref="4PacienteES.html"/>
+			<keyword name="Visualización" ref="5visualizacionES.html"/>
+			<keyword name="Señal lateral" ref="5visualizacionES.html#senales"/>
+			<keyword name="Señal antero-posterior" ref="5visualizacionES.html#senales"/>
+			<keyword name="Área de la elipse" ref="5visualizacionES.html#areas"/>
+			<keyword name="Área de la envolvente convexa" ref="5visualizacionES.html#areas"/>
+			<keyword name="Área de la elipse orientada" ref="5visualizacionES.html#areas"/>
+			<keyword name="Parámetros" ref="5visualizacionES.html#parametros"/>
+			<keyword name="Generar reporte" ref="6reporteES.html#generacion"/>
+			<keyword name="Editar reporte" ref="6reporteES.html#edicion"/>
+        </keywords>
+        <files>
+            <file>1infoGenES.html</file>
+            <file>2instalacionES.html</file>
+            <file>3ConfiguracionES.html</file>
+			<file>4PacienteES.html</file>
+			<file>5visualizacionES.html</file>
+			<file>6reporteES.html</file>
+			<file>7CreditosES.html</file>
+			<file>images/3Configuracion(ES).png</file>
+			<file>images/4Pacientes(ES).png</file>
+			<file>images/4_1NuevoEstudio(ES).png</file>
+			<file>images/4_2Visualizacion(ES).png</file>
+			<file>images/4_3Senales(ES).png</file>
+			<file>images/4_4Areas(ES).png</file>
+			<file>images/6Edicion(ES).png</file>
+			<file>images/image001.png</file>
+			<file>images/image005.png</file>
+			<file>images/image006.png</file>
+			<file>images/image007.png</file>
+			<file>images/image008.png</file>
+			<file>images/image009.png</file>
+			<file>images/image010.png</file>
+			<file>images/image011.png</file>
+			<file>images/image014.png</file>
+			<file>images/image015.png</file>
+			<file>images/image016.png</file>
+			<file>images/image017.png</file>
+        </files>
+    </filterSection>
+</QtHelpProject>
